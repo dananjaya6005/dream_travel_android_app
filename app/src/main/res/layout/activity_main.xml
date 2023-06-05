@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEEE5"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/head_txt"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottm_controller"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Explore the world with ease using our travel app"
+        android:textColor="@color/md_theme_dark_outlineVariant"
+        android:textSize="17dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/sub_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head_txt"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="We are promises to make your journey easier, smoother, and more enjoyable."
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/bottm_btn_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub_txt"
+        android:layout_marginTop="14dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/local_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:clickable="true"
+            app:backgroundTint="#FFB74D"
+            app:srcCompat="@mipmap/ic_launcher_sri_lanka" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Time_convertor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:clickable="true"
+            app:backgroundTint="#E57373"
+            app:srcCompat="@mipmap/ic_launcher_clock" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/food_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:clickable="true"
+            app:backgroundTint="#81C784"
+            app:srcCompat="@drawable/baseline_airplanemode_active_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/random_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:backgroundTint="#7986CB"
+
+            app:srcCompat="@drawable/baseline_egg_alt_24" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottm_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+
+    <LinearLayout
+        android:id="@+id/topelment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bottm_btn_controller"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="300dp"
+            android:layout_height="200dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/last_news"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topelment"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="latest travel news"
+        android:textSize="18dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_navigation_view"
+        android:layout_below="@+id/last_news"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/md_theme_dark_onTertiary"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="#FFFFFF"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu"
+        android:id="@+id/bottom_navigation_view">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+</RelativeLayout>

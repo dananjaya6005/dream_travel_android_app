@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "277595054522",
+    "firebase_url": "https://dreamtravelv1-default-rtdb.firebaseio.com",
+    "project_id": "dreamtravelv1",
+    "storage_bucket": "dreamtravelv1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277595054522:android:e124041e637b79b581fd83",
+        "android_client_info": {
+          "package_name": "com.example.dreamtravelv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277595054522-ejdqot80tclai97n0q71qgjulrvtl2fc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOmd28DbKpWKnbJnheT0JA7m4Ns096Cfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277595054522-ejdqot80tclai97n0q71qgjulrvtl2fc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
